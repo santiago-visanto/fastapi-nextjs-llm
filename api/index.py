@@ -28,7 +28,7 @@ app.add_middleware(
 
 
 # Define the endpoint
-@app.get("/api/llm_response")
+@app.get("/api/llm-response")
 async def get_llm_response():
     prompt = ChatPromptTemplate.from_template(
     "Tell me a short joke about {topic}"
